@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  SeSAC3FreeImages
+
+  Created by Taekwon Lee on 2023/09/11.
+  
+*/
+
+"nickname_placeholder" = "닉네임을 입력하세요";
+
+"change_button_title" = "변경";
+
+"nickname_result" = "당신의 닉네임은 %@입니다";
+
+"age_result" = "당신은 %d살입니다";

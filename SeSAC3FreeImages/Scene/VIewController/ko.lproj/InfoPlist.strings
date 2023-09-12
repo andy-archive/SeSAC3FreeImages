@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SeSAC3FreeImages
+
+  Created by Taekwon Lee on 2023/09/11.
+  
+*/
+
+"NSLocationWhenInUseUsageDescription" = "현재 위치를 파악하기 위해 위치 정보가 필요합니다";
+"CFBundleDisplayName" = "새싹";

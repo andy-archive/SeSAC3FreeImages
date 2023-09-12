@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  SeSAC3FreeImages
+
+  Created by Taekwon Lee on 2023/09/11.
+  
+*/
+
+"nickname_placeholder" = "Input nickname";
+
+"change_button_title" = "Change";
+
+"nickname_result" = "Your nickname is %@";
+
+"age_result" = "You are %d years old";

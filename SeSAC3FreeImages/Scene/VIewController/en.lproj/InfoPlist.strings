@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SeSAC3FreeImages
+
+  Created by Taekwon Lee on 2023/09/11.
+  
+*/
+
+"NSLocationWhenInUseUsageDescription" = "Location information is required to determine the current location";
+"CFBundleDisplayName" = "SeSAC";
