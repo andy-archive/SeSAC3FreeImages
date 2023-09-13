@@ -28,6 +28,10 @@
 		38F63D1A2AB02A92003F22FE /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D192AB02A92003F22FE /* APIKey.swift */; };
 		38F63D1C2AB02B6C003F22FE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D1B2AB02B6C003F22FE /* PhotoViewController.swift */; };
 		38F63D1E2AB02DAA003F22FE /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D1D2AB02DAA003F22FE /* PhotoViewModel.swift */; };
+		38F63D232AB07F00003F22FE /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D222AB07F00003F22FE /* PhotoTableViewCell.swift */; };
+		38F63D252AB139D0003F22FE /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D242AB139D0003F22FE /* CalculateViewController.swift */; };
+		38F63D272AB13BD6003F22FE /* CalculateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D262AB13BD6003F22FE /* CalculateViewModel.swift */; };
+		38F63D2A2AB13DC4003F22FE /* CustomObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D292AB13DC4003F22FE /* CustomObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		38F63D192AB02A92003F22FE /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		38F63D1B2AB02B6C003F22FE /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		38F63D1D2AB02DAA003F22FE /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		38F63D222AB07F00003F22FE /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		38F63D242AB139D0003F22FE /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		38F63D262AB13BD6003F22FE /* CalculateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewModel.swift; sourceTree = "<group>"; };
+		38F63D292AB13DC4003F22FE /* CustomObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 		38F63CCD2AAE997D003F22FE /* SeSAC3FreeImages */ = {
 			isa = PBXGroup;
 			children = (
+				38F63D282AB13DB4003F22FE /* Observable */,
 				38F63D172AB02A6E003F22FE /* .gitignore */,
 				38F63CE22AAE99FD003F22FE /* Application */,
 				38F63CD72AAE9980003F22FE /* Assets.xcassets */,
@@ -103,7 +112,8 @@
 				38F63D1F2AB02DD1003F22FE /* Network */,
 				38F63CE52AAE9A30003F22FE /* Storyboard */,
 				38F63D062AAFF2ED003F22FE /* Utility */,
-				38F63CE42AAE9A12003F22FE /* VIew */,
+				38F63CE42AAE9A12003F22FE /* View */,
+				38F63D212AB07EAC003F22FE /* ViewCell */,
 				38F63D032AAFED3E003F22FE /* ViewModel */,
 			);
 			path = SeSAC3FreeImages;
@@ -118,15 +128,16 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		38F63CE42AAE9A12003F22FE /* VIew */ = {
+		38F63CE42AAE9A12003F22FE /* View */ = {
 			isa = PBXGroup;
 			children = (
 				38F63D042AAFED50003F22FE /* LoginViewController.swift */,
 				38F63D1B2AB02B6C003F22FE /* PhotoViewController.swift */,
+				38F63D242AB139D0003F22FE /* CalculateViewController.swift */,
 				38F63D092AAFFE0A003F22FE /* SampleViewController.swift */,
 				38F63CD22AAE997D003F22FE /* ViewController.swift */,
 			);
-			path = VIew;
+			path = View;
 			sourceTree = "<group>";
 		};
 		38F63CE52AAE9A30003F22FE /* Storyboard */ = {
@@ -151,6 +162,7 @@
 			children = (
 				38F63D102AB00E3B003F22FE /* LoginViewModel.swift */,
 				38F63D1D2AB02DAA003F22FE /* PhotoViewModel.swift */,
+				38F63D262AB13BD6003F22FE /* CalculateViewModel.swift */,
 				38F63D0B2AB00158003F22FE /* SampleViewModel.swift */,
 			);
 			path = ViewModel;
@@ -160,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				38F63CF42AAEBAC9003F22FE /* Extension */,
-				38F63D072AAFF30F003F22FE /* Observable.swift */,
 				38F63D0D2AB00189003F22FE /* Localization */,
 			);
 			path = Utility;
@@ -191,6 +202,23 @@
 				38F63D152AB02A4E003F22FE /* Photo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		38F63D212AB07EAC003F22FE /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				38F63D222AB07F00003F22FE /* PhotoTableViewCell.swift */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		38F63D282AB13DB4003F22FE /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				38F63D072AAFF30F003F22FE /* Observable.swift */,
+				38F63D292AB13DC4003F22FE /* CustomObservable.swift */,
+			);
+			path = Observable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F63D232AB07F00003F22FE /* PhotoTableViewCell.swift in Sources */,
 				38F63D162AB02A4E003F22FE /* Photo.swift in Sources */,
 				38F63CF62AAEBAD1003F22FE /* String+Extension.swift in Sources */,
 				38F63CD32AAE997D003F22FE /* ViewController.swift in Sources */,
@@ -277,9 +306,12 @@
 				38F63D052AAFED50003F22FE /* LoginViewController.swift in Sources */,
 				38F63D142AB02A3C003F22FE /* APIService.swift in Sources */,
 				38F63D082AAFF30F003F22FE /* Observable.swift in Sources */,
+				38F63D252AB139D0003F22FE /* CalculateViewController.swift in Sources */,
 				38F63D0F2AB002EC003F22FE /* User.swift in Sources */,
+				38F63D2A2AB13DC4003F22FE /* CustomObservable.swift in Sources */,
 				38F63CD12AAE997D003F22FE /* SceneDelegate.swift in Sources */,
 				38F63D0C2AB00158003F22FE /* SampleViewModel.swift in Sources */,
+				38F63D272AB13BD6003F22FE /* CalculateViewModel.swift in Sources */,
 				38F63D112AB00E3B003F22FE /* LoginViewModel.swift in Sources */,
 				38F63D1C2AB02B6C003F22FE /* PhotoViewController.swift in Sources */,
 				38F63D1A2AB02A92003F22FE /* APIKey.swift in Sources */,

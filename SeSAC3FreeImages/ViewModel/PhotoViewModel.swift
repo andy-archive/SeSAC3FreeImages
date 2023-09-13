@@ -19,12 +19,17 @@ class PhotoViewModel {
     
     func fetchPhoto() {
         APIService.shared.searchPhoto(query: "sky") { [weak self] photo in
-            guard let photo = photo else {
-                return
-            }
+            guard let photo = photo else { return }
             self?.list.value = photo
         }
     }
+    
+//    func uploadPhoto(url: String) {
+//        APIService.shared.loadImage(url: URL(string: url)) { [weak self] image in
+//            self?.list.value
+//            
+//        }
+//    }
     
     func cellForRowAt(at indexPath: IndexPath) -> PhotoResult {
         return list.value.results![indexPath.row]
