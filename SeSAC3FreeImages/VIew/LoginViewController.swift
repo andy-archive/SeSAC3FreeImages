@@ -62,7 +62,6 @@ final class LoginViewController: UIViewController {
     
     @objc
     private func loginButtonClicked() {
-        
         guard let id = idTextField.text else { return }
         guard let pw = pwTextField.text else { return }
         

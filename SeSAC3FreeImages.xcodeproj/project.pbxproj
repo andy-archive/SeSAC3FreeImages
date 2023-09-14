@@ -32,6 +32,8 @@
 		38F63D252AB139D0003F22FE /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D242AB139D0003F22FE /* CalculateViewController.swift */; };
 		38F63D272AB13BD6003F22FE /* CalculateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D262AB13BD6003F22FE /* CalculateViewModel.swift */; };
 		38F63D2A2AB13DC4003F22FE /* CustomObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D292AB13DC4003F22FE /* CustomObservable.swift */; };
+		38F63D2D2AB296F0003F22FE /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D2C2AB296F0003F22FE /* SimpleTableViewController.swift */; };
+		38F63D2F2AB2A02E003F22FE /* NewSimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63D2E2AB2A02E003F22FE /* NewSimpleCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		38F63D242AB139D0003F22FE /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		38F63D262AB13BD6003F22FE /* CalculateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewModel.swift; sourceTree = "<group>"; };
 		38F63D292AB13DC4003F22FE /* CustomObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservable.swift; sourceTree = "<group>"; };
+		38F63D2C2AB296F0003F22FE /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		38F63D2E2AB2A02E003F22FE /* NewSimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		38F63CCD2AAE997D003F22FE /* SeSAC3FreeImages */ = {
 			isa = PBXGroup;
 			children = (
+				38F63D2B2AB296E0003F22FE /* New */,
 				38F63D282AB13DB4003F22FE /* Observable */,
 				38F63D172AB02A6E003F22FE /* .gitignore */,
 				38F63CE22AAE99FD003F22FE /* Application */,
@@ -221,6 +226,15 @@
 			path = Observable;
 			sourceTree = "<group>";
 		};
+		38F63D2B2AB296E0003F22FE /* New */ = {
+			isa = PBXGroup;
+			children = (
+				38F63D2C2AB296F0003F22FE /* SimpleTableViewController.swift */,
+				38F63D2E2AB2A02E003F22FE /* NewSimpleCollectionViewController.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +318,8 @@
 				38F63CCF2AAE997D003F22FE /* AppDelegate.swift in Sources */,
 				38F63D1E2AB02DAA003F22FE /* PhotoViewModel.swift in Sources */,
 				38F63D052AAFED50003F22FE /* LoginViewController.swift in Sources */,
+				38F63D2D2AB296F0003F22FE /* SimpleTableViewController.swift in Sources */,
+				38F63D2F2AB2A02E003F22FE /* NewSimpleCollectionViewController.swift in Sources */,
 				38F63D142AB02A3C003F22FE /* APIService.swift in Sources */,
 				38F63D082AAFF30F003F22FE /* Observable.swift in Sources */,
 				38F63D252AB139D0003F22FE /* CalculateViewController.swift in Sources */,

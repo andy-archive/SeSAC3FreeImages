@@ -50,9 +50,18 @@ extension SampleViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell")!
-        let data = viewModel.cellForRowAt(at: indexPath)
-        cell.textLabel?.text = data.introduce
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell")!
+//        let data = viewModel.cellForRowAt(at: indexPath)
+//        cell.textLabel?.text = data.introduce
+        
+        // UIListContentConfiguration
+        // withIdentifier를 사용할 필요가 없다
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration() // returns UIListContentConfiguration (which is struct)
+        content.text = "TEST"
+        content.secondaryText = "Hello \(indexPath.row)" // detailTextLabel
+        cell.contentConfiguration = content // Protocol as Type
+        
         return cell
     }
 }
