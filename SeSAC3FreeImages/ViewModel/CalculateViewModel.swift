@@ -48,6 +48,5 @@ class CalculateViewModel {
         }
         
         resultText.value = "result is \(firstConvertedNumber + secondConvertedNumber)"
-        
     }
 }
